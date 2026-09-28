@@ -84,7 +84,7 @@ rightBtn2.addEventListener("click", function () {
     } else {
 
         // DESKTOP
-        produkBox.scrollLeft += 1141;
+        produkBox2.scrollLeft += 1141;
 
     }
 

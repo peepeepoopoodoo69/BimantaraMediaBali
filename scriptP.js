@@ -5,54 +5,67 @@ const rightBtn = document.getElementById("rightBtn");
 const produkItems = produkBox.children;
 
 let currentIndex = 0;
+let canScroll = true;
 
 const mobileMode = window.matchMedia("(max-width: 768px)");
 
+function desktopScroll(amount) {
+    produkBox.scrollLeft += amount;
+}
+
+function mobileScroll(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    }
+
+    if (currentIndex >= produkItems.length) {
+        currentIndex = produkItems.length - 1;
+    }
+
+    produkItems[currentIndex].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start"
+    });
+}
+
+function startCooldown() {
+    canScroll = false;
+
+    setTimeout(() => {
+        canScroll = true;
+    }, 700); // cooldown = 700ms
+}
+
+
 rightBtn.addEventListener("click", function () {
 
+    if (!canScroll) return;
+
     if (mobileMode.matches) {
-
-        // MOBILE / TABLET
-        if (currentIndex < produkItems.length - 1) {
-            currentIndex++;
-
-            produkItems[currentIndex].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "start"
-            });
-        }
-
+        mobileScroll(1);
     } else {
-
-        // DESKTOP
-        produkBox.scrollLeft += 1141;
-
+        desktopScroll(1141);
     }
+
+    startCooldown();
 
 });
 
+
 leftBtn.addEventListener("click", function () {
 
+    if (!canScroll) return;
+
     if (mobileMode.matches) {
-
-        // MOBILE / TABLET
-        if (currentIndex > 0) {
-            currentIndex--;
-
-            produkItems[currentIndex].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "start"
-            });
-        }
-
+        mobileScroll(-1);
     } else {
-
-        // DESKTOP
-        produkBox.scrollLeft -= 1141;
-
+        desktopScroll(-1141);
     }
+
+    startCooldown();
 
 });
 
@@ -63,54 +76,67 @@ const rightBtn2 = document.getElementById("rightBtn2");
 const produkItems2 = produkBox2.children;
 
 let currentIndex2 = 0;
+let canScroll2 = true;
 
 const mobileMode2 = window.matchMedia("(max-width: 768px)");
 
+function desktopScroll2(amount) {
+    produkBox2.scrollLeft += amount;
+}
+
+function mobileScroll2(direction) {
+    currentIndex2 += direction;
+
+    if (currentIndex2 < 0) {
+        currentIndex2 = 0;
+    }
+
+    if (currentIndex2 >= produkItems2.length) {
+        currentIndex2 = produkItems2.length - 1;
+    }
+
+    produkItems2[currentIndex2].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start"
+    });
+}
+
+function startCooldown2() {
+    canScroll = false;
+
+    setTimeout(() => {
+        canScroll = true;
+    }, 700); // cooldown = 700ms
+}
+
+
 rightBtn2.addEventListener("click", function () {
 
+    if (!canScroll2) return;
+
     if (mobileMode2.matches) {
-
-        // MOBILE / TABLET
-        if (currentIndex2 < produkItems2.length - 1) {
-            currentIndex2++;
-
-            produkItems2[currentIndex2].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "start"
-            });
-        }
-
+        mobileScroll2(1);
     } else {
-
-        // DESKTOP
-        produkBox2.scrollLeft += 1141;
-
+        desktopScroll2(1141);
     }
+
+    startCooldown2();
 
 });
 
+
 leftBtn2.addEventListener("click", function () {
 
+    if (!canScroll2) return;
+
     if (mobileMode2.matches) {
-
-        // MOBILE / TABLET
-        if (currentIndex2 > 0) {
-            currentIndex2--;
-
-            produkItems2[currentIndex2].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "start"
-            });
-        }
-
+        mobileScroll2(-1);
     } else {
-
-        // DESKTOP
-        produkBox2.scrollLeft -= 1141;
-
+        desktopScroll2(-1141);
     }
+
+    startCooldown2();
 
 });
 
@@ -144,6 +170,77 @@ const observer2 = new IntersectionObserver(
 if (imageSection2) {
   observer2.observe(imageSection2);
 }
+
+const produkBox3 = document.getElementById("produkBox3");
+const leftBtn3 = document.getElementById("leftBtn3");
+const rightBtn3 = document.getElementById("rightBtn3");
+
+const produkItems3 = produkBox3.children;
+
+let currentIndex3 = 0;
+let canScroll3 = true;
+
+const mobileMode3 = window.matchMedia("(max-width: 768px)");
+
+function desktopScroll3(amount) {
+    produkBox3.scrollLeft += amount;
+}
+
+function mobileScroll3(direction) {
+    currentIndex3 += direction;
+
+    if (currentIndex3 < 0) {
+        currentIndex3 = 0;
+    }
+
+    if (currentIndex3 >= produkItems3.length) {
+        currentIndex3 = produkItems3.length - 1;
+    }
+
+    produkItems3[currentIndex3].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start"
+    });
+}
+
+function startCooldown3() {
+    canScrol3l = false;
+
+    setTimeout(() => {
+        canScroll3 = true;
+    }, 700); // cooldown = 700ms
+}
+
+
+rightBtn3.addEventListener("click", function () {
+
+    if (!canScroll3) return;
+
+    if (mobileMode3.matches) {
+        mobileScroll3(1);
+    } else {
+        desktopScroll3(1141);
+    }
+
+    startCooldown3();
+
+});
+
+
+leftBtn3.addEventListener("click", function () {
+
+    if (!canScroll3) return;
+
+    if (mobileMode3.matches) {
+        mobileScroll3(-1);
+    } else {
+        desktopScroll3(-1141);
+    }
+
+    startCooldown3();
+
+});
 
 const imageSection3 = document.querySelector(".produk-scroll-show2");
 

@@ -28,7 +28,8 @@ observer.observe(imageSection);
 
 const heroImage = document.getElementById("heroImage");
 
-const images = [
+if (heroImage) {
+    const images = [
     "images/landPageIMG/Land1.jpeg",
     "images/landPageIMG/Land2.jpeg",
     "images/landPageIMG/Land3.jpeg",
@@ -62,27 +63,23 @@ const images = [
     "images/landPageIMG/Land31.jpeg",
     "images/landPageIMG/Land32.jpeg",
     "images/landPageIMG/Land33.jpeg",
-    "images/landPageIMG/Land34.jpeg",
-];
+    "images/landPageIMG/Land34.jpeg"
+    ];
 
-let currentImage = 0;
+    let currentImage = 0;
 
-setInterval(() => {
+    setInterval(() => {
+        heroImage.classList.add("fade");
 
-    heroImage.classList.add("fade");
+        setTimeout(() => {
+            currentImage++;
 
-    setTimeout(() => {
+            if (currentImage >= images.length) {
+                currentImage = 0;
+            }
 
-        currentImage++;
-
-        if (currentImage >= images.length) {
-            currentImage = 0;
-        }
-
-        heroImage.src = images[currentImage];
-
-        heroImage.classList.remove("fade");
-
-    }, 600);
-
-}, 5000);
+            heroImage.src = images[currentImage];
+            heroImage.classList.remove("fade");
+        }, 600);
+    }, 5000);
+}

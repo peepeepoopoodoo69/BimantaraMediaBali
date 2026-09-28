@@ -2,7 +2,7 @@ console.log("SCRIPT A IS WORKING!");
 
 const aboutSection = document.querySelector(".about-anim");
 
-const observer = new IntersectionObserver((entries) => {
+const aboutObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const images = entry.target.querySelectorAll(".box-VM-anim");
 
@@ -20,10 +20,13 @@ const observer = new IntersectionObserver((entries) => {
             });
         }
     });
-}
-);
+}, {
+    threshold: 0.2
+});
 
-observer.observe(aboutSection);
+if (aboutSection) {
+    aboutObserver.observe(aboutSection);
+}
 
 const motto = document.querySelector(".motto");
 

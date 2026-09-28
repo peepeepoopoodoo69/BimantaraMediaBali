@@ -8,11 +8,11 @@ let currentIndex = 0;
 
 const mobileMode = window.matchMedia("(max-width: 768px)");
 
-rightBtn.addEventListener("click", () => {
+rightBtn.addEventListener("click", function () {
 
     if (mobileMode.matches) {
 
-        // 📱 MOBILE / TABLET
+        // MOBILE / TABLET
         if (currentIndex < produkItems.length - 1) {
             currentIndex++;
 
@@ -25,18 +25,18 @@ rightBtn.addEventListener("click", () => {
 
     } else {
 
-        // 🖥️ DESKTOP
+        // DESKTOP
         produkBox.scrollLeft += 1141;
 
     }
+
 });
 
-
-leftBtn.addEventListener("click", () => {
+leftBtn.addEventListener("click", function () {
 
     if (mobileMode.matches) {
 
-        // 📱 MOBILE / TABLET
+        // MOBILE / TABLET
         if (currentIndex > 0) {
             currentIndex--;
 
@@ -49,10 +49,11 @@ leftBtn.addEventListener("click", () => {
 
     } else {
 
-        // 🖥️ DESKTOP
+        // DESKTOP
         produkBox.scrollLeft -= 1141;
 
     }
+
 });
 
 const produkBox2 = document.getElementById("produkBox2");

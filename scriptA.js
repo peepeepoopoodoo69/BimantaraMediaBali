@@ -1,6 +1,6 @@
 console.log("SCRIPT A IS WORKING!");
 
-const imageSection = document.querySelector(".about-anim");
+const aboutSection = document.querySelector(".about-anim");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -23,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
 }
 );
 
-observer.observe(imageSection);
+observer.observe(aboutSection);
 
 const motto = document.querySelector(".motto");
 

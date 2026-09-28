@@ -1,0 +1,586 @@
+.produk-section h1 {
+  font-size: 45px;
+  color: rgb(0, 36, 168);
+  margin-top: 100px;
+
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(-70px);
+  animation: startupA 1.3s ease forwards;
+}
+
+@keyframes startupA {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.produk-section h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(-70px);
+  animation: startupA 1.3s ease forwards;
+}
+
+@keyframes startupA {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lemari-text {
+  font-size: 45px;
+  color: rgb(0, 36, 168);
+  text-align: center;
+  margin-bottom: 10px;
+
+  animation: startupB 1.3s ease forwards;
+}
+
+@keyframes startupB {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.produk-box {
+  width: 2010px;
+  height: 400px;
+
+  margin: auto;
+
+  display: flex;
+  gap: 30px;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.produk-box::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 calc((100% - 60px) / 3);
+  text-align: center;
+  box-sizing: border-box;
+
+  margin-top: 7px;
+
+  background-color: white;
+  border-radius: 25px;
+
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card:active {
+  transform: translateY(-7px);
+}
+
+.card img {
+  margin-top: 20px;
+  width: 90%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card p {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 35px;
+  font-weight: 500;
+  width: 320px;
+}
+
+.produk-slider {
+  position: relative;
+
+  width: 1115px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  transform: translateY(250px);
+  animation: startupC 1.3s ease forwards;
+}
+
+@keyframes startupC {
+  from {
+    transform: translateY(250px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.scroll-btn {
+  position: absolute;
+  z-index: 100;
+
+  width: 50px;
+  height: 100px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.scroll-btn:hover {
+  filter: brightness(95%);
+}
+
+.scroll-btn.left {
+  left: -60px;
+}
+
+.scroll-btn.right {
+  right: -60px;
+}
+
+.produk-scroll-show {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: 0.8s ease;
+}
+
+.produk-scroll-show.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.laptop-text2 {
+  font-size: 45px;
+  color: rgb(0, 36, 168);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.produk-box2 {
+  width: 2010px;
+  height: 400px;
+
+  margin: auto;
+
+  display: flex;
+  gap: 30px;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.produk-box2::-webkit-scrollbar {
+  display: none;
+}
+
+.card2 {
+  flex: 0 0 calc((100% - 60px) / 3);
+  text-align: center;
+  box-sizing: border-box;
+
+  margin-top: 7px;
+
+  background-color: white;
+  border-radius: 25px;
+
+  transition: transform 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-7px);
+}
+
+.card2:active {
+  transform: translateY(-7px);
+}
+
+.card2 img {
+  margin-top: 20px;
+  width: 90%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card2 p {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  width: 320px;
+}
+
+.produk-slider2 {
+  position: relative;
+
+  width: 1115px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.scroll-btn2 {
+  position: absolute;
+  z-index: 100;
+
+  width: 50px;
+  height: 100px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.scroll-btn2:hover {
+  filter: brightness(95%);
+}
+
+.scroll-btn2.left {
+  left: -60px;
+}
+
+.scroll-btn2.right {
+  right: -60px;
+}
+
+.desk-text3 {
+  font-size: 45px;
+  color: rgb(0, 36, 168);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.produk-box3 {
+  width: 2010px;
+  height: 400px;
+
+  margin: auto;
+
+  display: flex;
+  gap: 30px;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.produk-box3::-webkit-scrollbar {
+  display: none;
+}
+
+.card3 {
+  flex: 0 0 calc((100% - 60px) / 3);
+  text-align: center;
+  box-sizing: border-box;
+
+  margin-top: 7px;
+
+  background-color: white;
+  border-radius: 25px;
+
+  transition: transform 0.3s ease;
+}
+
+.card3:hover {
+  transform: translateY(-7px);
+}
+
+.card3:active {
+  transform: translateY(-7px);
+}
+
+.card3 img {
+  margin-top: 20px;
+  width: 90%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card3 p {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 35px;
+  font-weight: 500;
+  width: 320px;
+}
+
+.produk-slider3 {
+  position: relative;
+
+  width: 1115px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.scroll-btn3 {
+  position: absolute;
+  z-index: 100;
+
+  width: 50px;
+  height: 100px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.scroll-btn3:hover {
+  filter: brightness(95%);
+}
+
+.scroll-btn3.left {
+  left: -60px;
+}
+
+.scroll-btn3.right {
+  right: -60px;
+}
+
+.produk-scroll-show2 {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: 0.8s ease;
+}
+
+.produk-scroll-show2.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* =========================
+   PHONE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Prevent the page itself from becoming wider than the phone */
+    body {
+        overflow-x: hidden;
+    }
+
+    .produk-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Main title */
+    .produk-section h1 {
+        font-size: 32px;
+        margin-top: 120px;
+        padding: 0 15px;
+    }
+
+    .produk-section h2 {
+        font-size: 18px;
+        line-height: 1.4;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Category titles */
+    .lemari-text,
+    .laptop-text2,
+    .desk-text3 {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+
+    /* =========================
+       SLIDER CONTAINERS
+       ========================= */
+
+    .produk-slider,
+    .produk-slider2,
+    .produk-slider3 {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 45px;
+    }
+
+
+    /* =========================
+       PRODUCT BOXES
+       ========================= */
+
+    .produk-box,
+    .produk-box2,
+    .produk-box3 {
+        width: 100%;
+        height: 350px;
+        box-sizing: border-box;
+
+        display: flex;
+        gap: 20px;
+
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* =========================
+       CARDS
+       ========================= */
+
+    .card,
+    .card2,
+    .card3 {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 330px;
+
+        box-sizing: border-box;
+        margin-top: 7px;
+
+        border-radius: 20px;
+    }
+
+
+    /* Product images */
+    .card img,
+    .card2 img,
+    .card3 img {
+        width: 90%;
+        height: 190px;
+
+        margin-top: 15px;
+
+        object-fit: contain;
+    }
+
+
+    /* Product names */
+    .card p,
+    .card2 p,
+    .card3 p {
+        width: auto;
+        margin: 15px 15px 0;
+
+        font-size: 21px;
+        line-height: 1.25;
+    }
+
+
+    /* =========================
+       ARROW BUTTONS
+       ========================= */
+
+    .scroll-btn,
+    .scroll-btn2,
+    .scroll-btn3 {
+        width: 38px;
+        height: 75px;
+
+        font-size: 20px;
+        border-radius: 8px;
+    }
+
+
+    .scroll-btn.left,
+    .scroll-btn2.left,
+    .scroll-btn3.left {
+        left: 3px;
+    }
+
+    .scroll-btn.right,
+    .scroll-btn2.right,
+    .scroll-btn3.right {
+        right: 3px;
+    }
+
+
+    /* =========================
+       SCROLL SECTIONS
+       ========================= */
+
+    .produk-scroll-show,
+    .produk-scroll-show2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 30px 20px;
+    }
+
+    .footer-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-title img {
+        width: 45px;
+        height: auto;
+    }
+
+    .footer-title h2 {
+        font-size: 20px;
+    }
+
+    .loc-title {
+        margin-top: 25px;
+    }
+
+    .loc-title h1 {
+        font-size: 24px;
+    }
+
+    .loc-info {
+        margin: 0;
+    }
+
+    .loc-info p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,452 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.about-section > img {
+  width: 180px;
+  max-width: 60%;
+  height: auto;
+
+  margin-top: 100px;
+
+  opacity: 0;
+  transform: translateY(-70px);
+  animation: startupA 1.3s ease forwards;
+}
+
+@keyframes startupA {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   COMPANY DESCRIPTION
+========================= */
+
+.box {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 210px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #ddd;
+  border-radius: 30px;
+
+  background: #8ecbfa;
+
+  margin: 30px auto 0;
+  padding: 20px;
+
+  opacity: 0;
+  transform: translateY(70px);
+
+  animation: BstartupA 1.3s ease forwards;
+}
+
+@keyframes BstartupA {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box h3 {
+  font-size: clamp(20px, 2.5vw, 35px);
+  line-height: 1.4;
+}
+
+
+/* =========================
+   VISI / MISI
+========================= */
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 30px;
+
+  width: 100%;
+
+  margin-top: 30px;
+  padding: 0 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* Both animation containers */
+
+.box-VM-anim {
+  width: 100%;
+  max-width: 500px;
+
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.box-VM-anim.show {
+  animation: imageAppear2 0.8s ease forwards;
+}
+
+
+/* Animation delays */
+
+.box-VM-anim:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.box-VM-anim:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+@keyframes imageAppear2 {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   VISI BOX
+========================= */
+
+.box-V {
+  width: 100%;
+  min-height: 300px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #ddd;
+  border-radius: 30px;
+
+  background: #8ecbfa;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box-V img {
+  width: 200px;
+  max-width: 70%;
+
+  margin: 0 auto;
+}
+
+.box-V h1 {
+  font-size: clamp(28px, 3vw, 35px);
+  text-align: center;
+
+  margin-top: 10px;
+}
+
+.box-V h3 {
+  font-size: clamp(20px, 2.5vw, 30px);
+  line-height: 1.3;
+
+  text-align: center;
+}
+
+
+/* =========================
+   MISI BOX
+========================= */
+
+.box-M {
+  width: 100%;
+  min-height: 300px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #ddd;
+  border-radius: 30px;
+
+  background: #8ecbfa;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-M img {
+  width: 200px;
+  max-width: 70%;
+
+  margin: 0 auto;
+}
+
+.box-M h1 {
+  margin-top: 25px;
+
+  font-size: clamp(28px, 3vw, 35px);
+
+  text-align: center;
+}
+
+.box-M h3 {
+  font-size: clamp(20px, 2.5vw, 30px);
+  line-height: 1.3;
+
+  text-align: center;
+}
+
+
+/* =========================
+   MOTTO
+========================= */
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+  margin-bottom: 200px;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  transition: 0.8s ease;
+}
+
+.motto.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motto img {
+  width: 200px;
+  max-width: 60%;
+}
+
+.motto h1 {
+  margin: 10px 0 0;
+
+  font-size: clamp(30px, 4vw, 45px);
+
+  color: rgb(0, 36, 168);
+
+  text-align: center;
+}
+
+.motto h2 {
+  margin: 10px 0 0;
+
+  font-size: clamp(20px, 3vw, 30px);
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  .parent {
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .box-V,
+  .box-M {
+    min-height: 280px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 0 15px;
+  }
+
+  .about-section > img {
+    width: 140px;
+    margin-top: 90px;
+  }
+
+
+  /* Company description */
+
+  .box {
+    min-height: auto;
+
+    padding: 20px;
+
+    border-radius: 25px;
+  }
+
+  .box h3 {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+
+  /* Visi + Misi */
+
+  .parent {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 0 15px;
+  }
+
+  .box-VM-anim {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .box-V,
+  .box-M {
+    min-height: auto;
+
+    padding: 20px;
+
+    border-radius: 25px;
+  }
+
+  .box-V img,
+  .box-M img {
+    width: 150px;
+  }
+
+  .box-V h1,
+  .box-M h1 {
+    font-size: 30px;
+  }
+
+  .box-V h3,
+  .box-M h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+
+  /* Motto */
+
+  .motto {
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+    padding: 0 20px;
+  }
+
+  .motto img {
+    width: 150px;
+  }
+
+  .motto h1 {
+    font-size: 32px;
+  }
+
+  .motto h2 {
+    font-size: 20px;
+  }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  .about-section > img {
+    width: 120px;
+    margin-top: 120px;
+  }
+
+  .box {
+    padding: 18px;
+
+    border-radius: 20px;
+  }
+
+  .box h3 {
+    font-size: 17px;
+  }
+
+  .parent {
+    padding: 0 10px;
+  }
+
+  .box-V,
+  .box-M {
+    padding: 18px;
+
+    border-radius: 20px;
+  }
+
+  .box-V img,
+  .box-M img {
+    width: 120px;
+  }
+
+  .box-V h1,
+  .box-M h1 {
+    font-size: 27px;
+  }
+
+  .box-V h3,
+  .box-M h3 {
+    font-size: 18px;
+  }
+
+  .motto {
+    padding: 0 15px;
+
+    margin-bottom: 100px;
+  }
+
+  .motto img {
+    width: 120px;
+  }
+
+  .motto h1 {
+    font-size: 28px;
+  }
+
+  .motto h2 {
+    font-size: 18px;
+  }
+}

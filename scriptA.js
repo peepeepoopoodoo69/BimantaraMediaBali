@@ -1,3 +1,5 @@
+console.log("SCRIPT A IS WORKING!");
+
 const imageSection = document.querySelector(".about-anim");
 
 const observer = new IntersectionObserver((entries) => {

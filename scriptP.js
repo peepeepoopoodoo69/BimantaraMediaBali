@@ -11,7 +11,7 @@ if (rightBtn && leftBtn && produkBox) {
     canScroll = false;
 
     if (window.innerWidth <= 768) {
-      produkBox.scrollLeft += 400;
+      produkBox.scrollLeft += 800;
     } else {
       produkBox.scrollLeft += 1141;
     }

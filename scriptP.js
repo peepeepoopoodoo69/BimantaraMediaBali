@@ -27,7 +27,7 @@ if (rightBtn && leftBtn && produkBox) {
     canScroll = false;
 
     if (window.innerWidth <= 768) {
-      produkBox.scrollLeft -= produkBox.clientWidth;
+      produkBox.scrollLeft -= 330;
     } else {
       produkBox.scrollLeft -= 1141;
     }
@@ -51,7 +51,7 @@ if (rightBtn2 && leftBtn2 && produkBox2) {
     canScroll2 = false;
 
     if (window.innerWidth <= 768) {
-      produkBox2.scrollLeft += produkBox2.clientWidth;
+      produkBox2.scrollLeft += 330;
     } else {
       produkBox2.scrollLeft += 1141;
     }
@@ -67,7 +67,7 @@ if (rightBtn2 && leftBtn2 && produkBox2) {
 
     canScroll2 = false;
     if (window.innerWidth <= 768) {
-      produkBox2.scrollLeft -= produkBox2.clientWidth;
+      produkBox2.scrollLeft -= 330;
     } else {
       produkBox2.scrollLeft -= 1141;
     }
@@ -123,7 +123,7 @@ if (rightBtn3 && leftBtn3 && produkBox3) {
     canScroll3 = false;
 
     if (window.innerWidth <= 768) {
-      produkBox3.scrollLeft += produkBox3.clientWidth;
+      produkBox3.scrollLeft += 330;
     } else {
       produkBox3.scrollLeft += 1141;
     }
@@ -139,7 +139,7 @@ if (rightBtn3 && leftBtn3 && produkBox3) {
 
     canScroll3 = false;
     if (window.innerWidth <= 768) {
-      produkBox3.scrollLeft -= produkBox3.clientWidth;
+      produkBox3.scrollLeft -= 330;
     } else {
       produkBox3.scrollLeft -= 1141;
     }

@@ -64,28 +64,54 @@ const produkItems2 = produkBox2.children;
 
 let currentIndex2 = 0;
 
-rightBtn2.addEventListener("click", () => {
-    if (currentIndex2 < produkItems2.length - 1) {
-        currentIndex2++;
+const mobileMode2 = window.matchMedia("(max-width: 768px)");
 
-        produkItems2[currentIndex2].scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "start"
-        });
+rightBtn2.addEventListener("click", function () {
+
+    if (mobileMode2.matches) {
+
+        // MOBILE / TABLET
+        if (currentIndex2 < produkItems2.length - 1) {
+            currentIndex2++;
+
+            produkItems2[currentIndex2].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "start"
+            });
+        }
+
+    } else {
+
+        // DESKTOP
+        produkBox.scrollLeft += 1141;
+
     }
+
 });
 
-leftBtn2.addEventListener("click", () => {
-    if (currentIndex2 > 0) {
-        currentIndex2--;
+leftBtn2.addEventListener("click", function () {
 
-        produkItems2[currentIndex2].scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "start"
-        });
+    if (mobileMode2.matches) {
+
+        // MOBILE / TABLET
+        if (currentIndex2 > 0) {
+            currentIndex2--;
+
+            produkItems2[currentIndex2].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "start"
+            });
+        }
+
+    } else {
+
+        // DESKTOP
+        produkBox2.scrollLeft -= 1141;
+
     }
+
 });
 
 const imageSection2 = document.querySelector(".produk-scroll-show");

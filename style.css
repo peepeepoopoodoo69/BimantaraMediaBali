@@ -67,21 +67,17 @@ header ul {
 
 header li {
   text-align: center;
-  padding-left: 10px;
+  margin-left: 20px;
   text-decoration: none;
 
   transition: all 0.5s ease;
 }
 
-header li:hover {
-  background-color: rgb(172, 214, 242);
-  height: 50px;
-  border-radius: 10px;
-}
-
 #header-anim a {
+  position: relative;
   display: inline-block;
-  padding: 10px 10px 0;
+
+  padding: 8px 10px 0;
 
   color: white;
   text-align: center;
@@ -89,13 +85,48 @@ header li:hover {
 
   font-size: 20px;
   font-weight: 700;
-  min-height: 40px;
+  min-height: 37px;
 
   transition: all 0.5s ease;
 }
 
 #header-anim a:hover {
-  font-size: 23px;
+  color: rgb(0, 36, 168);
+  transform: translateY(-3px) scale(1.1);
+}
+
+#header-anim a:active {
+  color: rgb(0, 36, 168);
+  transform: translateY(-3px) scale(1.1);
+}
+
+.nav-button {
+    position: relative;
+}
+
+.hover-bar {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+
+  width: 0;
+  height: 5px;
+
+  background: rgb(0, 36, 168);
+
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+
+  pointer-events: none;
+}
+
+.nav-button a:hover .hover-bar {
+  width: 80%;
+}
+
+.nav-button a:active .hover-bar {
+  width: 80%;
 }
 
 /* =========================

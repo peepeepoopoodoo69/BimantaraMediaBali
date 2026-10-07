@@ -111,10 +111,12 @@
 
 .card p {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 40px;
   font-size: 35px;
   font-weight: 500;
-  width: 320px;
+  width: 280px;
+
+  background-color: grey;
 }
 
 .produk-slider {

@@ -47,7 +47,7 @@ rightBtn.addEventListener("click", function () {
     if (mobileMode.matches) {
         mobileScroll(1);
     } else {
-        desktopScroll(1141);
+        desktopScroll(1146);
     }
 
     startCooldown();
@@ -62,7 +62,7 @@ leftBtn.addEventListener("click", function () {
     if (mobileMode.matches) {
         mobileScroll(-1);
     } else {
-        desktopScroll(-1141);
+        desktopScroll(-1146);
     }
 
     startCooldown();
@@ -118,7 +118,7 @@ rightBtn2.addEventListener("click", function () {
     if (mobileMode2.matches) {
         mobileScroll2(1);
     } else {
-        desktopScroll2(1141);
+        desktopScroll2(1142);
     }
 
     startCooldown2();
@@ -133,7 +133,7 @@ leftBtn2.addEventListener("click", function () {
     if (mobileMode2.matches) {
         mobileScroll2(-1);
     } else {
-        desktopScroll2(-1141);
+        desktopScroll2(-1142);
     }
 
     startCooldown2();
@@ -220,7 +220,7 @@ rightBtn3.addEventListener("click", function () {
     if (mobileMode3.matches) {
         mobileScroll3(1);
     } else {
-        desktopScroll3(1141);
+        desktopScroll3(1145);
     }
 
     startCooldown3();
@@ -235,7 +235,7 @@ leftBtn3.addEventListener("click", function () {
     if (mobileMode3.matches) {
         mobileScroll3(-1);
     } else {
-        desktopScroll3(-1141);
+        desktopScroll3(-1145);
     }
 
     startCooldown3();

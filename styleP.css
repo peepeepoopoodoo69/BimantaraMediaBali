@@ -63,7 +63,7 @@
 }
 
 .produk-box {
-  width: 2010px;
+  width: 2011px;
   height: 400px;
 
   margin: auto;
@@ -96,6 +96,7 @@
 
 .card:hover {
   transform: translateY(-7px);
+  border: 2px solid rgb(0, 36, 168);
 }
 
 .card:active {
@@ -120,7 +121,7 @@
 .produk-slider {
   position: relative;
 
-  width: 1115px;
+  width: 1115.6px;
   margin: auto;
 
   display: flex;
@@ -185,7 +186,7 @@
 }
 
 .produk-box2 {
-  width: 2010px;
+  width: 2011px;
   height: 400px;
 
   margin: auto;
@@ -218,6 +219,7 @@
 
 .card2:hover {
   transform: translateY(-7px);
+  border: 2px solid rgb(0, 36, 168);
 }
 
 .card2:active {
@@ -242,7 +244,7 @@
 .produk-slider2 {
   position: relative;
 
-  width: 1115px;
+  width: 1115.6px;
   margin: auto;
 
   display: flex;
@@ -284,7 +286,7 @@
 }
 
 .produk-box3 {
-  width: 2010px;
+  width: 2011px;
   height: 400px;
 
   margin: auto;
@@ -317,6 +319,7 @@
 
 .card3:hover {
   transform: translateY(-7px);
+  border: 2px solid rgb(0, 36, 168);
 }
 
 .card3:active {
@@ -341,7 +344,7 @@
 .produk-slider3 {
   position: relative;
 
-  width: 1115px;
+  width: 1115.7px;
   margin: auto;
 
   display: flex;

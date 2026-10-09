@@ -1,3 +1,5 @@
+// console.log("SCRIPT A IS WORKING!");
+
 const produkBox = document.getElementById("produkBox");
 const leftBtn = document.getElementById("leftBtn");
 const rightBtn = document.getElementById("rightBtn");
@@ -47,7 +49,7 @@ rightBtn.addEventListener("click", function () {
     if (mobileMode.matches) {
         mobileScroll(1);
     } else {
-        desktopScroll(1146);
+        desktopScroll(1145.4);
     }
 
     startCooldown();
@@ -62,7 +64,7 @@ leftBtn.addEventListener("click", function () {
     if (mobileMode.matches) {
         mobileScroll(-1);
     } else {
-        desktopScroll(-1146);
+        desktopScroll(-1145.4);
     }
 
     startCooldown();
@@ -118,7 +120,7 @@ rightBtn2.addEventListener("click", function () {
     if (mobileMode2.matches) {
         mobileScroll2(1);
     } else {
-        desktopScroll2(1142);
+        desktopScroll2(1145.4);
     }
 
     startCooldown2();
@@ -133,7 +135,7 @@ leftBtn2.addEventListener("click", function () {
     if (mobileMode2.matches) {
         mobileScroll2(-1);
     } else {
-        desktopScroll2(-1142);
+        desktopScroll2(-1145.4);
     }
 
     startCooldown2();
@@ -220,7 +222,7 @@ rightBtn3.addEventListener("click", function () {
     if (mobileMode3.matches) {
         mobileScroll3(1);
     } else {
-        desktopScroll3(1145);
+        desktopScroll3(1145.4);
     }
 
     startCooldown3();
@@ -235,7 +237,7 @@ leftBtn3.addEventListener("click", function () {
     if (mobileMode3.matches) {
         mobileScroll3(-1);
     } else {
-        desktopScroll3(-1145);
+        desktopScroll3(-1145.4);
     }
 
     startCooldown3();

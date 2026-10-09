@@ -3,57 +3,11 @@
 ========================= */
 
 .about-section {
-  text-align: center;
-  padding: 0 30px;
-  box-sizing: border-box;
-}
-
-.about-section > img {
-  width: 180px;
-  max-width: 60%;
-  height: auto;
-
-  margin-top: 100px;
+  margin-top: 50px;
+  padding: 50px;
 
   opacity: 0;
-  transform: translateY(-70px);
-  animation: startupA 1.3s ease forwards;
-}
-
-@keyframes startupA {
-  from {
-    opacity: 0;
-    transform: translateY(-70px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-/* =========================
-   COMPANY DESCRIPTION
-========================= */
-
-.box {
-  width: 100%;
-  max-width: 1400px;
-  min-height: 210px;
-
-  box-sizing: border-box;
-
-  border: 2px solid #ddd;
-  border-radius: 30px;
-
-  background: #8ecbfa;
-
-  margin: 30px auto 0;
-  padding: 20px;
-
-  opacity: 0;
-  transform: translateY(70px);
+  transform: translateX(-70px);
 
   animation: BstartupA 1.3s ease forwards;
 }
@@ -61,17 +15,25 @@
 @keyframes BstartupA {
   from {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateX(-70px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.box h3 {
-  font-size: clamp(20px, 2.5vw, 35px);
+.about-section h1 {
+  color: rgb(0, 36, 168);
+}
+
+.about-section h3 {
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-size: clamp(25px, 1.5vw, 30px);
   line-height: 1.4;
 }
 
@@ -137,13 +99,6 @@
   width: 100%;
   min-height: 300px;
 
-  box-sizing: border-box;
-
-  border: 2px solid #ddd;
-  border-radius: 30px;
-
-  background: #8ecbfa;
-
   padding: 20px;
 
   display: flex;
@@ -153,17 +108,20 @@
 }
 
 .box-V img {
-  width: 200px;
+  width: 201px;
   max-width: 70%;
 
   margin: 0 auto;
 }
 
 .box-V h1 {
-  font-size: clamp(28px, 3vw, 35px);
-  text-align: center;
+  margin-top: 14px;
 
-  margin-top: 10px;
+  font-size: clamp(28px, 3vw, 35px);
+
+  color: rgb(0, 36, 168);
+
+  text-align: center;
 }
 
 .box-V h3 {
@@ -174,6 +132,7 @@
 }
 
 
+
 /* =========================
    MISI BOX
 ========================= */
@@ -181,13 +140,6 @@
 .box-M {
   width: 100%;
   min-height: 348px;
-
-  box-sizing: border-box;
-
-  border: 2px solid #ddd;
-  border-radius: 30px;
-
-  background: #8ecbfa;
 
   padding: 20px;
 
@@ -207,6 +159,8 @@
   margin-top: 25px;
 
   font-size: clamp(28px, 3vw, 35px);
+
+  color: rgb(0, 36, 168);
 
   text-align: center;
 }
@@ -310,8 +264,6 @@
     min-height: auto;
 
     padding: 20px;
-
-    border-radius: 25px;
   }
 
   .box h3 {

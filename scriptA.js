@@ -1,4 +1,4 @@
-console.log("SCRIPT A IS WORKING!");
+// console.log("SCRIPT A IS WORKING!");
 
 const aboutSection = document.querySelector(".about-anim");
 

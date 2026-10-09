@@ -1,3 +1,5 @@
+// console.log("SCRIPT A IS WORKING!");
+
 const imageSection = document.querySelector(".flex-image-link");
 
 const observer = new IntersectionObserver((entries) => {

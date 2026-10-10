@@ -3,11 +3,11 @@
 ========================= */
 
 .about-section {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 50px;
 
   opacity: 0;
-  transform: translateX(-70px);
+  transform: translateY(-70px);
 
   animation: BstartupA 1.3s ease forwards;
 }
@@ -15,23 +15,25 @@
 @keyframes BstartupA {
   from {
     opacity: 0;
-    transform: translateX(-70px);
+    transform: translateY(-70px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 .about-section h1 {
   color: rgb(0, 36, 168);
+
+  text-align: center;
 }
 
 .about-section h3 {
   margin-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+
+  text-align: center;
 
   font-size: clamp(25px, 1.5vw, 30px);
   line-height: 1.4;
@@ -51,7 +53,7 @@
 
   width: 100%;
 
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 0 30px;
 
   box-sizing: border-box;
@@ -97,7 +99,7 @@
 
 .box-V {
   width: 100%;
-  min-height: 300px;
+  min-height: 348px;
 
   padding: 20px;
 
@@ -108,14 +110,14 @@
 }
 
 .box-V img {
-  width: 201px;
+  width: 200px;
   max-width: 70%;
 
   margin: 0 auto;
 }
 
 .box-V h1 {
-  margin-top: 14px;
+  margin-top: 17px;
 
   font-size: clamp(28px, 3vw, 35px);
 
@@ -225,180 +227,334 @@
 
 
 /* =====================================================
-   TABLET
-   ===================================================== */
+TABLET
+===================================================== */
 
 @media (max-width: 900px) {
 
-  .parent {
-    gap: 20px;
-    padding: 0 20px;
-  }
-
-  .box-V,
-  .box-M {
-    min-height: 280px;
-  }
+.about-section {
+padding: 35px 25px;
 }
 
+.about-section h1 {
+font-size: clamp(28px, 4vw, 38px);
+}
+
+.about-section h3 {
+font-size: clamp(20px, 2.6vw, 25px);
+line-height: 1.5;
+}
+
+/* Visi + Misi */
+
+.parent {
+gap: 20px;
+padding: 0 15px;
+}
+
+.box-VM-anim {
+flex: 1;
+min-width: 0;
+}
+
+.box-V,
+.box-M {
+min-height: 300px;
+padding: 20px 15px;
+box-sizing: border-box;
+}
+
+.box-V img,
+.box-M img {
+width: 160px;
+max-width: 80%;
+}
+
+.box-V h1,
+.box-M h1 {
+font-size: clamp(25px, 3vw, 32px);
+}
+
+.box-V h3,
+.box-M h3 {
+font-size: clamp(18px, 2.2vw, 23px);
+line-height: 1.45;
+}
+
+/* Motto */
+
+.motto {
+margin-top: 45px;
+margin-bottom: 130px;
+padding: 0 25px;
+}
+
+.motto img {
+width: 170px;
+}
+
+.motto h1 {
+font-size: clamp(28px, 4vw, 38px);
+}
+
+.motto h2 {
+font-size: clamp(19px, 2.7vw, 25px);
+line-height: 1.5;
+}
+}
 
 /* =====================================================
-   MOBILE
-   ===================================================== */
+MOBILE
+===================================================== */
 
 @media (max-width: 768px) {
 
-  .about-section {
-    padding: 0 15px;
-  }
-
-  .about-section > img {
-    width: 140px;
-    margin-top: 90px;
-  }
-
-
-  /* Company description */
-
-  .box {
-    min-height: auto;
-
-    padding: 20px;
-  }
-
-  .box h3 {
-    font-size: 19px;
-    line-height: 1.5;
-  }
-
-
-  /* Visi + Misi */
-
-  .parent {
-    flex-direction: column;
-    align-items: center;
-
-    gap: 25px;
-
-    padding: 0 15px;
-  }
-
-  .box-VM-anim {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .box-V,
-  .box-M {
-    min-height: auto;
-
-    padding: 20px;
-
-    border-radius: 25px;
-  }
-
-  .box-V img,
-  .box-M img {
-    width: 150px;
-  }
-
-  .box-V h1,
-  .box-M h1 {
-    font-size: 30px;
-  }
-
-  .box-V h3,
-  .box-M h3 {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-
-
-  /* Motto */
-
-  .motto {
-    margin-top: 60px;
-    margin-bottom: 120px;
-
-    padding: 0 20px;
-  }
-
-  .motto img {
-    width: 150px;
-  }
-
-  .motto h1 {
-    font-size: 32px;
-  }
-
-  .motto h2 {
-    font-size: 20px;
-  }
+.about-section {
+margin-top: 90px;
+padding: 25px 15px;
 }
 
+.about-section h1 {
+font-size: 30px;
+line-height: 1.3;
+}
+
+.about-section h3 {
+margin-top: 12px;
+font-size: 19px;
+line-height: 1.6;
+}
+
+/* Company description box */
+
+.box {
+width: 100%;
+min-height: auto;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.box h3 {
+font-size: 18px;
+line-height: 1.6;
+}
+
+/* Visi + Misi */
+
+.parent {
+flex-direction: column;
+align-items: center;
+gap: 25px;
+
+width: 100%;
+margin-top: 25px;
+padding: 0;
+
+}
+
+.box-VM-anim {
+width: 100%;
+max-width: 500px;
+box-sizing: border-box;
+}
+
+.box-V,
+.box-M {
+width: 100%;
+min-height: auto;
+padding: 25px 20px;
+box-sizing: border-box;
+border-radius: 20px;
+}
+
+.box-V img,
+.box-M img {
+width: 145px;
+max-width: 65%;
+}
+
+.box-V h1,
+.box-M h1 {
+margin-top: 18px;
+font-size: 29px;
+line-height: 1.3;
+}
+
+.box-M h1 {
+margin-top: 18px;
+}
+
+.box-V h3,
+.box-M h3 {
+margin-bottom: 0;
+font-size: 19px;
+line-height: 1.6;
+overflow-wrap: break-word;
+}
+
+/* Motto */
+
+.motto {
+margin-top: 45px;
+margin-bottom: 90px;
+padding: 0 15px;
+}
+
+.motto img {
+width: 145px;
+max-width: 60%;
+}
+
+.motto h1 {
+font-size: 30px;
+line-height: 1.4;
+overflow-wrap: break-word;
+}
+
+.motto h2 {
+font-size: 19px;
+line-height: 1.6;
+overflow-wrap: break-word;
+}
+}
 
 /* =====================================================
-   SMALL PHONES
-   ===================================================== */
+SMALL PHONES
+===================================================== */
 
 @media (max-width: 480px) {
 
-  .about-section > img {
-    width: 120px;
-    margin-top: 120px;
-  }
+.about-section {
+margin-top: 100px;
+padding: 20px 12px;
+}
 
-  .box {
-    padding: 18px;
+.about-section h1 {
+font-size: 26px;
+}
 
-    border-radius: 20px;
-  }
+.about-section h3 {
+font-size: 17px;
+line-height: 1.6;
+}
 
-  .box h3 {
-    font-size: 17px;
-  }
+/* Images above the company description */
 
-  .parent {
-    padding: 0 10px;
-  }
+.about-section > img {
+display: block;
+width: 110px;
+max-width: 50%;
+height: auto;
+margin: 100px auto 20px;
+}
 
-  .box-V,
-  .box-M {
-    padding: 18px;
+/* Company description box */
 
-    border-radius: 20px;
-  }
+.box {
+padding: 16px;
+border-radius: 18px;
+}
 
-  .box-V img,
-  .box-M img {
-    width: 120px;
-  }
+.box h3 {
+font-size: 16px;
+line-height: 1.6;
+}
 
-  .box-V h1,
-  .box-M h1 {
-    font-size: 27px;
-  }
+/* Visi + Misi */
 
-  .box-V h3,
-  .box-M h3 {
-    font-size: 18px;
-  }
+.parent {
+gap: 20px;
+padding: 0;
+}
 
-  .motto {
-    padding: 0 15px;
+.box-VM-anim {
+max-width: 100%;
+}
 
-    margin-bottom: 100px;
-  }
+.box-V,
+.box-M {
+padding: 20px 15px;
+border-radius: 18px;
+}
 
-  .motto img {
-    width: 120px;
-  }
+.box-V img,
+.box-M img {
+width: 120px;
+}
 
-  .motto h1 {
-    font-size: 28px;
-  }
+.box-V h1,
+.box-M h1 {
+font-size: 25px;
+}
 
-  .motto h2 {
-    font-size: 18px;
-  }
+.box-V h3,
+.box-M h3 {
+font-size: 16px;
+line-height: 1.6;
+}
+
+/* Motto */
+
+.motto {
+margin-top: 35px;
+margin-bottom: 70px;
+padding: 0 10px;
+}
+
+.motto img {
+width: 115px;
+}
+
+.motto h1 {
+font-size: 25px;
+line-height: 1.4;
+}
+
+.motto h2 {
+font-size: 16px;
+line-height: 1.6;
+}
+}
+
+/* =====================================================
+EXTRA SMALL PHONES
+===================================================== */
+
+@media (max-width: 360px) {
+
+.about-section {
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.about-section h1 {
+font-size: 24px;
+}
+
+.about-section h3 {
+font-size: 16px;
+}
+
+.box-V,
+.box-M {
+padding: 18px 12px;
+}
+
+.box-V h1,
+.box-M h1 {
+font-size: 23px;
+}
+
+.box-V h3,
+.box-M h3 {
+font-size: 15px;
+}
+
+.motto h1 {
+font-size: 23px;
+}
+
+.motto h2 {
+font-size: 15px;
+}
 }
